@@ -36,7 +36,7 @@
     </div>
     <li v-for="(task,index) in filteredList" :class="{done: task.done}">
             <div v-if = 'task.largesize' class='bg-gray-300 '>
-              <span @click="toggleLarge(index)" class="material-icons">
+              <span @click="toggleLarge(index)" class="material-icons py-2">
                 highlight_off
               </span>
             <img :src="task.url" width="150" class="mb-10 mx-auto my-auto rounded-lg w-80 h-80">
